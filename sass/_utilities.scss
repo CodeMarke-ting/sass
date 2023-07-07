@@ -1,0 +1,26 @@
+// variables
+$main-color: green;
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+// map +
+// media queries
+// errors
+// use forward
+
+$colors: (
+  "apple": rgb(166, 27, 27),
+  "kiwi": green,
+  "banana": yellow,
+);
+
+$breakpoints: (
+  "desktop": 1024px,
+  "laptop": 992px,
+  "mobile": 400px,
+);

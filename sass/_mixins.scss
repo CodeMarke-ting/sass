@@ -1,0 +1,25 @@
+@mixin custom-flex($justify, $align, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin text($font-size, $weight, $family, $spacing, $height, $color) {
+  font-size: $font-size;
+  font-weight: $weight;
+  font-family: $family;
+  letter-spacing: $spacing;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin darkMode($value) {
+  @if $value == "dark" {
+    background-color: gray;
+  } @else if $value == "light" {
+    background-color: wheat;
+  } @else {
+    // @error "Unknown color #{$value}.";
+  }
+}

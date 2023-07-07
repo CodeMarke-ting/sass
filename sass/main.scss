@@ -1,0 +1,32 @@
+@import "loop";
+@import "queries.scss";
+@import "functions";
+@import "mixins";
+@import "utilities";
+@import "container";
+
+p {
+  font-size: pxToRem(48);
+  background-color: red;
+  margin-top: 10rem;
+}
+
+// body {
+//   @include darkMode("dark");
+// }
+
+section {
+  background-color: map-get($colors, "apple");
+}
+
+// @media screen and (max-width: 500px) {
+//   body {
+//     background-color: fuchsia;
+//   }
+// }
+
+@include mq(laptop) {
+  body {
+    background-color: fuchsia;
+  }
+}

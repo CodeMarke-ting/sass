@@ -1,0 +1,63 @@
+.p-40px {
+  padding: 40px;
+}
+.p-50px {
+  padding: 50px;
+}
+.p-80px {
+  padding: 80px;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  height: 300px;
+  background-color: green;
+}
+.container .item {
+  color: #fff;
+  background-color: #008b8b;
+  padding: 5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-bewteen;
+  align-items: start;
+  gap: 1rem;
+}
+.container .item p {
+  color: blue;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial;
+  letter-spacing: 10px;
+  line-height: 2;
+  color: red;
+}
+.container .item button {
+  background-color: peru;
+  border: none;
+  padding: 1rem;
+}
+.container .item button:hover {
+  background-color: red;
+}
+p {
+  font-size: 3rem;
+  background-color: red;
+  margin-top: 10rem;
+}
+section {
+  background-color: #a61b1b;
+}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #f0f;
+  }
+} /*# sourceMappingURL=main.css.map */

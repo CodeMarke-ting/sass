@@ -1,0 +1,7 @@
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .p-#{$size} {
+    padding: $size;
+  }
+}

@@ -1,0 +1,30 @@
+// nesting
+.container {
+  //   @extend .flex;
+  @include custom-flex(space-around, center, 5rem);
+
+  height: 300px;
+  background-color: $main-color;
+
+  .item {
+    color: white;
+    background-color: darkcyan;
+    padding: 5rem;
+    border-radius: 10px;
+    @include custom-flex(space-bewteen, start, 1rem);
+    p {
+      color: blue;
+      @include text(2rem, bold, Arial, 10px, 2, red);
+    }
+
+    button {
+      background-color: peru;
+      border: none;
+      padding: 1rem;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
